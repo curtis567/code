@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Earth</title>
+
+
+    </style>
+</head>
+
+<body>
+    <script>
+        var sun = new Image();
+        var mercury = new Image();
+        var Venus = new Image();
+        var moon = new Image();
+        var earth = new Image();
+        var Mars = new Image();
+        var Jupiter = new Image();
+        var Saturn = new Image();
+        var Uranus = new Image();
+        var Neptune = new Image();
+
+        function init() {
+
+            sun.src = 'image/sun.png';
+            moon.src = 'image/moon.png';
+            earth.src = 'image/earth.png';
+            mercury.src = "image/mercury1.png";
+            Venus.src = "image/Venus1.png";
+            Mars.src = "image/mars1.png";
+            Jupiter.src = "image/Jupiter1.png";
+            Saturn.src = "image/Saturn1.png";
+            Uranus.src = "image/Uranus1.png";
+            Neptune.src = "image/Neptune1.png";
+
+            window.requestAnimationFrame(draw); 
+        }
+
+        function draw() {
+            var ctx = document.getElementById('canvas').getContext('2d');
+
+            ctx.globalCompositeOperation = 'destination-over';
+            ctx.clearRect(0, 0, 1100, 1100);
+
+            var time = new Date();
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+            ctx.strokeStyle = 'rgsba(0, 153, 255, 0.4)';
+            ctx.save();
+
+
+            // mercury
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / -60) * time.getSeconds() + ((2 * Math.PI) / -60000) * time.getMilliseconds());
+            ctx.translate(100, 0);
+            ctx.fillRect(0, -12, 25, 24);
+            ctx.drawImage(mercury, -12, -12);
+            ctx.restore();
+            ctx.save();
+
+
+
+            // Venus
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+            ctx.translate(150, 0);
+            ctx.fillRect(0, -12, 25, 27);
+            ctx.drawImage(Venus, -12, -12);
+            ctx.restore();//返回以前保存的路徑狀態和屬性
+            ctx.save();
+
+
+
+            // Earth
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+            ctx.translate(200, 0);
+            ctx.fillRect(0, -12, 25, 24);
+            ctx.drawImage(earth, -12, -12);
+
+            // Moon
+            ctx.save();
+            ctx.rotate(((2 * Math.PI) / -6) * time.getSeconds() + ((2 * Math.PI) / -6000) * time.getMilliseconds());
+            ctx.translate(0, 28.5);
+            ctx.drawImage(moon, -3.5, -3.5);
+            ctx.restore();
+            ctx.restore();
+            ctx.save();
+
+
+            // Mars
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+            ctx.translate(250, 0);
+            ctx.drawImage(Mars, -12, -12);
+            ctx.restore();
+            ctx.save();
+
+
+            // Jupiter
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / -60) * time.getSeconds() + ((2 * Math.PI) / -60000) * time.getMilliseconds());
+            ctx.translate(300, 0);
+            ctx.fillRect(27, -10, 40, 70);
+            ctx.drawImage(Jupiter, -12, -12);
+            ctx.restore();
+            ctx.save();
+
+
+
+            // Saturn
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / -6) * time.getSeconds() + ((2 * Math.PI) / -6000) * time.getMilliseconds());
+            ctx.translate(400, 0);
+            ctx.fillRect(30, -2, 30, 40);
+            ctx.drawImage(Saturn, -12, -12);
+            ctx.restore();
+            ctx.save();
+
+
+
+            // Uranus
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / 30) * time.getSeconds() + ((2 * Math.PI) / 30000) * time.getMilliseconds());
+            ctx.translate(500, 0);
+            ctx.fillRect(20, -10, 25, 55);
+            ctx.drawImage(Uranus, -12, -12);
+            ctx.restore();
+            ctx.save();
+
+
+
+            // Neptune
+            ctx.translate(550, 350);
+            ctx.rotate(((2 * Math.PI) / -30) * time.getSeconds() + ((2 * Math.PI) / -30000) * time.getMilliseconds());
+            ctx.translate(600, 0);
+            ctx.drawImage(Neptune, -12, -12);
+            ctx.restore();
+            ctx.restore();
+
+
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 100, 0, Math.PI * 2, false);
+            // ctx.stroke();
+
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 150, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 200, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 250, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 300, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 350, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 400, 0, Math.PI * 2, false);
+            // ctx.stroke();
+            // ctx.beginPath();
+            // ctx.arc(550, 350, 450, 0, Math.PI * 2, false);
+            // ctx.stroke();
+
+            ctx.drawImage(sun, 400, 200, 300, 300);
+            ctx.drawImage(sun, 200, 0, 700, 700);
+            ctx.drawImage(sun, 0, -100, 700, 1100);
+            ctx.drawImage(sun, 0, 0, 700, 1100);
+            ctx.drawImage(sun, 200, 0, 700, 1100);
+            ctx.drawImage(sun, 400, 0, 700, 1100);
+            window.requestAnimationFrame(draw);
+        }
+
+        init();
+    </script>
+    <canvas id="canvas" width="1100" height="1100">
+    </canvas>
+
+</body>
+
+</html>
