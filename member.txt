@@ -1,0 +1,23 @@
+CREATE DATABASE website
+GO
+
+USE website
+GO
+CREATE TABLE member (
+ 
+  id int IDENTITY NOT NULL,
+  account varchar(30) NOT NULL,
+  password varchar(30) NOT NULL,
+  name varchar(30) NOT NULL,
+  gender varchar(45) NOT NULL,
+  email varchar(45) NOT NULL,
+  birthday varchar(45) NOT NULL,
+  Career varchar(45) NOT NULL,
+  tel varchar(45) NOT NULL,
+
+
+
+  PRIMARY KEY (id)
+)
+GO
+select * from member

@@ -1,0 +1,103 @@
+CREATE DATABASE website
+GO
+
+USE website
+GO
+
+CREATE TABLE vodoe (
+ 
+  id int NOT NULL,
+  kind varchar(30) NOT NULL,
+  kindID int NOT NULL,
+  title varchar(30) NOT NULL,
+  origin varchar(45) NOT NULL,
+  
+  PRIMARY KEY (id)
+)
+GO
+
+   INSERT INTO vodoe VALUES 
+  (1,'Popular',1,'這群人-計程車','nSyw_yUHIAc')
+   INSERT INTO vodoe VALUES 
+  (2,'Popular',1,'一日系列-剪髮','1RrBjSlx8JI')
+   INSERT INTO vodoe VALUES 
+  (3,'Popular',1,'小朋友嗆記者','Ru0pKwPBEvI')
+   INSERT INTO vodoe VALUES 
+  (4,'Popular',1,'一日系列-便利商店','pXpGeusqb-M')
+   INSERT INTO vodoe VALUES 
+  (5,'Popular',1,'德國男子用了1年徒步走遍中國','TfR9TNGietA')
+   INSERT INTO vodoe VALUES 
+  (6,'Popular',1,'Joeman史上最敷衍的前菜?','WkA2Kvsum2o')
+   INSERT INTO vodoe VALUES 
+  (7,'Popular',1,'10個在海底世界的奇蹟之物','-QUMc9SUHgs')
+   INSERT INTO vodoe VALUES 
+  (8,'Popular',1,'卡提諾狂新聞 #71','gzadbXg6Akc')
+   INSERT INTO vodoe VALUES 
+  (9,'Popular',1,'盧廣仲出席金曲沒穿短褲原因','G3QWRtVS7TY')
+   INSERT INTO vodoe VALUES 
+  (10,'Popular',1,'淡定小黑人自己剪頭髮','XCx8ZKR_6us')
+
+   INSERT INTO vodoe VALUES 
+  (11,'Sports',2,'(MVP) Award 2017 NBA Awards','WkcYz6Wf9L8')
+   INSERT INTO vodoe VALUES 
+  (12,'Sports',2,'Lackey is ejected ','q5k45_Qz0l8') 
+  INSERT INTO vodoe VALUES 
+  (13,'Sports',2,'FIFA Confederations Cup 2017','mcHThmRquyo')
+   INSERT INTO vodoe VALUES 
+  (14,'Sports',2,'I Will Beat McGregor ','pWxMrqx6PQM')
+   INSERT INTO vodoe VALUES 
+  (15,'Sports',2,'Blind VolleyBall Challenge!!','ogFtu4unYsc')
+   INSERT INTO vodoe VALUES 
+  (16,'Sports',2,'The Best Rapid-Fire Boxing ','RyoihmkWDFk')
+   INSERT INTO vodoe VALUES 
+  (17,'Sports',2,'Lamelo Ball gets into a FIGHT','3OVFl60x9CM')
+   INSERT INTO vodoe VALUES 
+  (18,'Sports',2,'Mlb | Rarest Plays','UMEysc799Pg')
+   INSERT INTO vodoe VALUES 
+  (19,'Sports',2,'Monster Jam World Finals','S0poDIyPEl0')
+   INSERT INTO vodoe VALUES 
+  (20,'Sports',2,'Conor McGregor boxing ','ZzhSt8QM1i8')
+
+   INSERT INTO vodoe VALUES 
+  (21,'game',3,'最狂的出裝奪13擊殺','s1Lt4Q_uZVk')
+  INSERT INTO vodoe VALUES 
+  (22,'game',3,'Overguy : Rise of the Riddler','fVfT0z90Oko')
+  INSERT INTO vodoe VALUES 
+  (23,'game',3,'英雄聯盟新英雄慨影','gNgcKfW0v_A')
+  INSERT INTO vodoe VALUES 
+  (24,'game',3,'StarCraft: Remastered','1BzNM2pyzW8')
+  INSERT INTO vodoe VALUES 
+  (25,'game',3,'Pre-Order Now!','SZMo6kZxQDY')
+  INSERT INTO vodoe VALUES 
+  (26,'game',3,'Fate/Grand Order','JFbvKC3qMDc')
+  INSERT INTO vodoe VALUES 
+  (27,'game',3,'傳說對決-DC小丑','wAXYUe525p8')
+  INSERT INTO vodoe VALUES 
+  (28,'game',3,'MY FIRST EVER "RAID"','Wc09XwRBVjk')
+  INSERT INTO vodoe VALUES 
+  (29,'game',3,'WHAT HAPPENS IF YOU USE','GNZkVEmQRXw')
+  INSERT INTO vodoe VALUES 
+  (30,'game',3,'MONSTER HUNTER WORLD','SXB2IHLm4m0')
+
+  INSERT INTO vodoe VALUES 
+  (31,'Musice video',4,'TWICE "SIGNAL"','VQtonf1fv_s')
+  INSERT INTO vodoe VALUES 
+  (32,'Musice video',4,'盧廣仲 Crowd Lu 【魚仔】','ybfWYpYhTQQ')
+  INSERT INTO vodoe VALUES 
+  (33,'Musice video',4,'李千娜 Nana Lee-不曾回來過','bpJko9n8KTY')
+  INSERT INTO vodoe VALUES 
+  (34,'Musice video',4,'家家酒Playhouse','T-Xk_xirUlo')
+  INSERT INTO vodoe VALUES 
+  (35,'Musice video',4,'PSY -‘New Face’','OwJPPaEyqhI')
+  INSERT INTO vodoe VALUES 
+  (36,'Musice video',4,'Ed Sheeran - Galway Girl','87gWaABqGYs')
+  INSERT INTO vodoe VALUES 
+  (37,'Musice video',4,'Clean Bandit - Symphony feat. ','aatr_2MstrI')
+  INSERT INTO vodoe VALUES 
+  (38,'Musice video',4,'Clean Bandit - Rockabye ft.','papuvlVeZg8')
+  INSERT INTO vodoe VALUES 
+  (39,'Musice video',4,'Ed Sheeran - Shape','JGwWNGJdvx8')
+  INSERT INTO vodoe VALUES 
+  (40,'Musice video',4,'Something Just ','FM7MFYoylVs')
+
+GO
